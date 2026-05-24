@@ -1,0 +1,11 @@
+Feature,Importance
+Mode_Risk_Score,0.5731616
+Days for shipment (scheduled),0.10728639
+Is_Transfer_Payment,0.04173435
+Payment_Risk_Score,0.041671984
+Segment_Risk_Score,0.02001433
+Is_Express_Mode,0.01906838
+Discount_Severity,0.016588718
+Market_Risk_Score,0.015678337
+Department_Risk_Score,0.012176091
+Order Item Discount Rate,0.010888455

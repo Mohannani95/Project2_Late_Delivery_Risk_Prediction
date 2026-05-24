@@ -1,0 +1,50 @@
+
+PHASE 7 SUMMARY — Model Building Complete
+============================================
+
+MODELS TRAINED: 3
+
+1. LOGISTIC REGRESSION (Baseline)
+   - Accuracy:  0.6964
+   - Precision: 0.8499
+   - Recall:    0.5419
+   - F1 Score:  0.6619
+   - ROC-AUC:   0.7412
+
+2. RANDOM FOREST
+   - Accuracy:  0.6984
+   - Precision: 0.8438
+   - Recall:    0.5521
+   - F1 Score:  0.6675
+   - ROC-AUC:   0.7504
+
+3. XGBOOST
+   - Accuracy:  0.7007
+   - Precision: 0.8158
+   - Recall:    0.5866
+   - F1 Score:  0.6825
+   - ROC-AUC:   0.7682
+
+WINNER: XGBoost
+- Saved as: models/best_model.pkl
+- Used for: Streamlit dashboard predictions
+
+RISK CATEGORIZATION:
+- Low Risk:    Probability < 0.40
+- Medium Risk: Probability 0.40 - 0.70
+- High Risk:   Probability >= 0.70
+
+RISK DISTRIBUTION (TEST SET):
+- Low Risk:    15,007 orders
+- Medium Risk: 10,011 orders  
+- High Risk:   11,086 orders
+
+FILES SAVED:
+- models/model_logistic_regression.pkl
+- models/model_random_forest.pkl
+- models/model_xgboost.pkl
+- models/best_model.pkl
+- models/best_model_name.txt
+- data/test_predictions.csv
+
+READY FOR: Phase 8 — Detailed Model Evaluation

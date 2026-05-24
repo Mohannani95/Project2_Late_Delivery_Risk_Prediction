@@ -1,0 +1,37 @@
+
+PHASE 6 SUMMARY — Data Preparation Complete
+==============================================
+INPUT:  APL_Logistics_engineered.csv (42 columns)
+
+STEPS COMPLETED:
+1. ✅ Dropped 9 redundant categorical columns (replaced by risk scores)
+2. ✅ Separated features (X) and target (y)
+3. ✅ Train-test split: 80/20, stratified
+4. ✅ Standard scaling fit on train only (applied to test)
+5. ✅ SMOTE applied to training set (test set untouched)
+
+OUTPUT SHAPES:
+   X_train_balanced: (158362, 32)
+   y_train_balanced: (158362,)
+   X_test_scaled:    (36104, 32)
+   y_test:           (36104,)
+
+FEATURE COUNT: 32 predictive features
+TRAINING SAMPLES: 158,362 (post-SMOTE)
+TEST SAMPLES: 36,104
+
+FILES SAVED:
+   models/X_train_balanced.pkl
+   models/X_test_scaled.pkl
+   models/y_train_balanced.pkl
+   models/y_test.pkl
+   models/scaler.pkl
+   models/feature_names.pkl
+
+CRITICAL PRACTICES FOLLOWED:
+- Fit scaler ONLY on training data (prevents leakage)
+- Applied SMOTE ONLY on training data (test reflects reality)
+- Stratified split (maintains class balance)
+- Set random_state for reproducibility
+
+READY FOR: Phase 7 — Model Building

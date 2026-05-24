@@ -1,0 +1,54 @@
+
+PHASE 5 SUMMARY — Feature Engineering Complete
+================================================
+INPUT:  APL_Logistics_cleaned.csv (24 columns)
+OUTPUT: APL_Logistics_engineered.csv (42 columns)
+
+NEW FEATURES CREATED (18 total):
+
+1. SHIPPING PRESSURE & MODE FEATURES:
+   - Shipping_Pressure_Index   (quantity / scheduled_days)
+   - Mode_Risk_Score           (target-encoded risk per mode)
+   - Is_Express_Mode           (binary: Same Day / First Class)
+
+2. GEOGRAPHIC RISK FEATURES:
+   - Market_Risk_Score         (target-encoded risk per market)
+   - Region_Risk_Score         (target-encoded risk per region)
+
+3. COMPLEXITY FEATURE:
+   - Order_Complexity_Score    (weighted composite score)
+
+4. DISCOUNT FEATURES:
+   - Is_High_Discount          (binary: discount > 15%)
+   - Discount_Severity         (ordinal: 0-4)
+
+5. PROFIT FEATURES:
+   - Is_Loss_Order             (binary: negative profit)
+   - Profit_Per_Unit           (profit / quantity)
+   - Profit_Margin             (cleaned profit ratio)
+
+6. SALES FEATURES:
+   - Sales_Category            (ordinal: 0-4 by value)
+
+7. CATEGORY/DEPT FEATURES:
+   - Category_Risk_Score
+   - Department_Risk_Score
+
+8. PAYMENT FEATURES:
+   - Payment_Risk_Score
+   - Is_Cash_Payment
+   - Is_Transfer_Payment
+
+9. CUSTOMER FEATURES:
+   - Segment_Risk_Score
+
+KEY TECHNIQUE USED: Target Encoding
+- Replaces categorical columns with numeric risk scores
+- More powerful than one-hot encoding for tree-based models
+- Caveat: Mention overfitting risk mitigation in research paper
+
+DATA QUALITY:
+- Missing values: 0
+- Shape: (180519, 42)
+
+READY FOR: Phase 6 — Data Preparation (encoding, scaling, splitting)

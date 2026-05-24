@@ -1,0 +1,29 @@
+
+PHASE 3 SUMMARY — Data Cleaning Complete
+==========================================
+INPUT:  APL_Logistics.csv (180,519 rows × 40 columns)
+OUTPUT: APL_Logistics_cleaned.csv (180,519 rows × 24 columns)
+
+ACTIONS TAKEN:
+1. Removed 3 DATA LEAKAGE columns:
+   - Days for shipping (real)
+   - Delivery Status
+   - Order Status
+
+2. Removed identifier/PII columns (privacy + no predictive value):
+   - Customer Fname, Customer Lname
+   - Customer Street, Customer Zipcode
+   - Customer Id, Order Customer Id
+
+3. Removed over-granular columns (overfitting risk):
+   - Customer City, Customer State
+   - Order City, Order State
+   - Product Name, Category Id, Department Id
+
+4. Cleaned text columns (whitespace, standardization)
+5. Verified no missing values, no duplicates
+
+REMAINING FEATURES: 24 columns
+TARGET: Late_delivery_risk (preserved)
+
+READY FOR: Phase 4 — Exploratory Data Analysis (EDA)

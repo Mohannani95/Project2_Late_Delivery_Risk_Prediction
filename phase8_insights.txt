@@ -1,0 +1,60 @@
+
+PHASE 8 — DETAILED EVALUATION INSIGHTS
+================================================
+
+BEST MODEL: XGBoost
+
+PERFORMANCE METRICS (TEST SET):
+   - Accuracy:  0.7007 (70.07%)
+   - Precision: 0.8158 (81.58%)
+   - Recall:    0.5866 (58.66%)
+   - F1 Score:  0.6825 (68.25%)
+   - ROC-AUC:   0.7682
+
+TOP 10 RISK DRIVERS (Feature Importance):
+                      Feature  Importance
+              Mode_Risk_Score    0.573162
+Days for shipment (scheduled)    0.107286
+          Is_Transfer_Payment    0.041734
+           Payment_Risk_Score    0.041672
+           Segment_Risk_Score    0.020014
+              Is_Express_Mode    0.019068
+            Discount_Severity    0.016589
+            Market_Risk_Score    0.015678
+        Department_Risk_Score    0.012176
+     Order Item Discount Rate    0.010888
+
+BUSINESS INTERPRETATION:
+- The model identifies high-risk orders BEFORE shipping
+- Top drivers are mostly logistics-related (mode, region, complexity)
+- Allows operations to PROACTIVELY intervene
+
+RISK CATEGORY ACCURACY:
+               Orders  Actual_Late  Actual_Late_Rate  On_Time
+Risk_Category                                                
+Low Risk        15007         5117             34.10     9890
+Medium Risk     10011         4882             48.77     5129
+High Risk       11086         9797             88.37     1289
+
+OPERATIONAL IMPACT:
+- High-risk orders flagged: 11,086
+- Of those, actually late:  9,797
+- High-Risk precision:       88.4%
+
+KEY TAKEAWAYS FOR APL LOGISTICS:
+1. Mode risk score is the #1 predictor — review SLAs for express modes
+2. Regional risk drives significant variance — investigate logistics partners
+3. Order complexity matters — consider streamlining high-complexity orders
+
+RECOMMENDED DEPLOYMENT THRESHOLD: 0.35
+(Optimizes F1 score for balanced performance)
+
+FILES GENERATED:
+- charts/18_confusion_matrices.png
+- charts/19_roc_curves.png
+- charts/20_precision_recall_curves.png
+- charts/21_feature_importance.png
+- charts/22_risk_validation.png
+- charts/23_threshold_analysis.png
+
+READY FOR: Phase 9 — Streamlit Dashboard

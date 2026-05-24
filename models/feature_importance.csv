@@ -1,0 +1,33 @@
+Feature,Importance
+Mode_Risk_Score,0.5731616
+Days for shipment (scheduled),0.10728639
+Is_Transfer_Payment,0.04173435
+Payment_Risk_Score,0.041671984
+Segment_Risk_Score,0.02001433
+Is_Express_Mode,0.01906838
+Discount_Severity,0.016588718
+Market_Risk_Score,0.015678337
+Department_Risk_Score,0.012176091
+Order Item Discount Rate,0.010888455
+Order Item Product Price,0.00935752
+Region_Risk_Score,0.009080223
+Sales_Category,0.008271905
+Category_Risk_Score,0.0076843877
+Longitude,0.0076340893
+Latitude,0.0073284335
+Order Item Quantity,0.00671116
+Profit_Margin,0.0063564978
+Sales,0.006266399
+Is_Cash_Payment,0.0061469553
+Order Item Total,0.006008078
+Product Price,0.0059616803
+Profit_Per_Unit,0.0059551676
+Order Item Profit Ratio,0.0059350333
+Order Profit Per Order,0.005737387
+Order_Complexity_Score,0.0057287575
+Order Item Discount,0.005574391
+Benefit per order,0.005502338
+Sales per customer,0.0054849056
+Shipping_Pressure_Index,0.0052837166
+Is_High_Discount,0.0048942235
+Is_Loss_Order,0.004828168

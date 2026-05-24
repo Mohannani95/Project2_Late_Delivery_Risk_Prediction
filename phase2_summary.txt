@@ -1,0 +1,31 @@
+
+PHASE 2 SUMMARY — Data Exploration Complete
+=============================================
+Dataset: APL_Logistics.csv
+Total Records: 180,519
+Total Columns: 40
+Memory: 55.09 MB
+Encoding: latin-1
+Duplicates: 0
+
+TARGET VARIABLE: Late_delivery_risk
+  - 0 (On Time): 81,542 (45.17%)
+  - 1 (Late):    98,977 (54.83%)
+
+MISSING VALUES: Only 11 cells (effectively zero)
+  - Customer Lname: 8
+  - Customer Zipcode: 3
+
+COLUMN TYPES:
+  - Numeric: 21
+  - Categorical: 19
+
+DATA LEAKAGE COLUMNS (will be dropped in Phase 3):
+  1. Days for shipping (real)
+  2. Delivery Status
+  3. Order Status
+
+Key Markets: LATAM, Europe, Pacific Asia, USCA, Africa
+Key Shipping Modes: Standard, Second, First, Same Day
+
+Phase 2 Complete. Ready for Phase 3 (Data Cleaning).

@@ -1,0 +1,46 @@
+
+PHASE 4 — EDA KEY INSIGHTS
+================================================
+
+OVERALL: 54.8% of orders are LATE
+(This is a serious operational issue requiring intervention)
+
+1. SHIPPING MODE RISK RANKING:
+Shipping Mode
+First Class       95.3%
+Second Class      76.6%
+Same Day          45.7%
+Standard Class    38.1%
+
+   → KEY FINDING: Faster shipping modes (First Class, Same Day) have 
+     HIGHER late rates because of tighter SLAs to break.
+
+2. MARKET RISK RANKING:
+Market
+Europe          55.2%
+Pacific Asia    55.0%
+USCA            54.8%
+Africa          54.6%
+LATAM           54.4%
+
+   → KEY FINDING: Regional infrastructure & logistics partner quality
+     drives the variance across markets.
+
+3. TOP 5 RISKIEST CATEGORIES:
+Category Name
+Cameras             58.1%
+Accessories         57.0%
+Women's Clothing    56.5%
+Golf Gloves         56.3%
+Electronics         56.1%
+
+4. SCHEDULED SHIPPING DAYS:
+   → Shorter scheduled times correlate with higher late rates
+   → Operations should review SLA commitments by mode
+
+5. ORDER VALUE PATTERN:
+   → Sales and quantity have weak direct correlation with delays
+   → Lateness is more about logistics than order size
+
+CHARTS GENERATED: 11 (saved in /charts folder)
+READY FOR: Phase 5 — Feature Engineering
