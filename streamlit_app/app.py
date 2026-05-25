@@ -777,7 +777,7 @@ with tab3:
             text=heatmap_data.round(1).values,
             texttemplate='%{text}%',
             textfont={"size": 12, "color": "white"},
-            colorbar=dict(title="Late Rate (%)", titlefont=dict(size=11))
+            colorbar=dict(title=dict(text="Late Rate (%)", font=dict(size=11)))
         ))
         fig = style_plotly(fig, height=350)
         st.plotly_chart(fig, use_container_width=True)
