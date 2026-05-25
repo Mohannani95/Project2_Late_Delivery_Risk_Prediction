@@ -7,6 +7,8 @@
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.0-green)](https://xgboost.readthedocs.io/)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Click_Here-success?style=for-the-badge)](https://project2latedeliveryriskprediction-mvpp6wdtwgd33dcj4sohcg.streamlit.app/)
+
 ## 🎯 Project Overview
 
 APL Logistics faces unpredictable shipment delays across five global markets. This project delivers a **predictive risk intelligence system** that flags high-risk orders **before** shipping — enabling proactive operational intervention instead of costly reactive fixes.
