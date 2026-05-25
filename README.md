@@ -15,7 +15,7 @@ APL Logistics faces unpredictable shipment delays across five global markets. Th
 
 ## 🚀 Live Demo
 
-🔗 **Dashboard:** Coming soon (Streamlit Cloud deployment)  
+🔗 **Dashboard:** [🚀 Click here to launch live demo](https://your-app-name.streamlit.app)  
 📄 **Research Paper:** See `research_paper/` folder
 
 ## 📊 Key Results
